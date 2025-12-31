@@ -1,15 +1,19 @@
+def delete_task(tasks,index):
+    tasks.pop(index)
 def main():
     print("Welcome to To-Do List Manager")
 
 if __name__ == "__main__":
     main()
 
-def delete_task(tasks, index): if 0 <= index < len(tasks):
+def delete_task(tasks, index): if 0 <= index < len(tasks): 
+        tasks.pop(index) print("Task deleted successfully")
+def delete_task(tasks, index):
+    if 0 <= index < len(tasks):
         tasks.pop(index)
         print("Task deleted successfully")
-def delete_task(tasks,index):
-    tasks.pop(index)
-
+    else:
+        print("Invalid task number")
 def view_tasks(tasks):
     if not tasks:
         print("No tasks available")
